@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 70;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,7 +13,6 @@
 		9C6CE0962CCEA7A0005FD85F /* Welcome.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C6CE0942CCEA7A0005FD85F /* Welcome.storyboard */; };
 		9C6CE0982CCEA7A1005FD85F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C6CE0972CCEA7A1005FD85F /* Assets.xcassets */; };
 		9C6CE09B2CCEA7A1005FD85F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C6CE0992CCEA7A1005FD85F /* LaunchScreen.storyboard */; };
-		9CAEC4782CD1029900E21E68 /* TabBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CAEC4772CD1029900E21E68 /* TabBar.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,8 +24,12 @@
 		9C6CE0972CCEA7A1005FD85F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9C6CE09A2CCEA7A1005FD85F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9C6CE09C2CCEA7A1005FD85F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9CAEC4772CD1029900E21E68 /* TabBar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TabBar.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		7950CB5B2CD7C571001A92D7 /* TabBar */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = TabBar; sourceTree = "<group>"; };
+		7950CB5F2CD7F027001A92D7 /* TextedCat */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = TextedCat; sourceTree = "<group>"; };
+/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		9C6CE0882CCEA7A0005FD85F /* Frameworks */ = {
@@ -80,18 +83,11 @@
 		9C6CE0A32CD0EF6A005FD85F /* Scene */ = {
 			isa = PBXGroup;
 			children = (
-				9CAEC4762CD1028700E21E68 /* TabBar */,
+				7950CB5F2CD7F027001A92D7 /* TextedCat */,
+				7950CB5B2CD7C571001A92D7 /* TabBar */,
 				9C6CE0A22CD0EF60005FD85F /* Welcome */,
 			);
 			path = Scene;
-			sourceTree = "<group>";
-		};
-		9CAEC4762CD1028700E21E68 /* TabBar */ = {
-			isa = PBXGroup;
-			children = (
-				9CAEC4772CD1029900E21E68 /* TabBar.storyboard */,
-			);
-			path = TabBar;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -108,6 +104,10 @@
 			buildRules = (
 			);
 			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				7950CB5B2CD7C571001A92D7 /* TabBar */,
+				7950CB5F2CD7F027001A92D7 /* TextedCat */,
 			);
 			name = ConcerteApp;
 			productName = ConcerteApp;
@@ -152,7 +152,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9CAEC4782CD1029900E21E68 /* TabBar.storyboard in Resources */,
 				9C6CE09B2CCEA7A1005FD85F /* LaunchScreen.storyboard in Resources */,
 				9C6CE0982CCEA7A1005FD85F /* Assets.xcassets in Resources */,
 				9C6CE0962CCEA7A0005FD85F /* Welcome.storyboard in Resources */,

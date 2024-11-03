@@ -8,17 +8,20 @@
 import UIKit
 
 class WelcomeViewController: UIViewController {
-
+    
     @IBOutlet weak var catImageView: UIImageView!
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     @IBOutlet weak var statusLabel: UILabel!
+    private let openTextedCatButton = UIButton(type: .system)
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
         
         statusLabel.text = "Готов к загрузке!"
         activityIndicator.hidesWhenStopped = true
+        
+        view.backgroundColor = .white
+        setupTextedCatButton()
     }
     
     private func downloadCat() {
@@ -40,12 +43,29 @@ class WelcomeViewController: UIViewController {
         
         task.resume()
     }
-
     
     @IBAction func didTapButton(_ sender: Any) {
         activityIndicator.startAnimating()
         statusLabel.text = "Начинаю загрузку кота!"
         downloadCat()
+    }
+    
+    private func setupTextedCatButton() {
+        openTextedCatButton.setTitle("Открыть TextedCat", for: .normal)
+        openTextedCatButton.addTarget(self, action: #selector(openTextedCat), for: .touchUpInside)
+        openTextedCatButton.translatesAutoresizingMaskIntoConstraints = false
+        view.addSubview(openTextedCatButton)
+        
+        NSLayoutConstraint.activate([
+            openTextedCatButton.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            openTextedCatButton.centerYAnchor.constraint(equalTo: view.centerYAnchor)
+        ])
+    }
+    
+    @objc private func openTextedCat() {
+        let textedCatVC = TextedCatViewController()
+        textedCatVC.modalPresentationStyle = .fullScreen
+        present(textedCatVC, animated: true, completion: nil)
     }
 }
 
