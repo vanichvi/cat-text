@@ -7,19 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7959335E2CDE5B5200E1DBF0 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7959335D2CDE5B5200E1DBF0 /* WelcomeViewController.swift */; };
 		9C6CE08F2CCEA7A0005FD85F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C6CE08E2CCEA7A0005FD85F /* AppDelegate.swift */; };
 		9C6CE0912CCEA7A0005FD85F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C6CE0902CCEA7A0005FD85F /* SceneDelegate.swift */; };
-		9C6CE0932CCEA7A0005FD85F /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C6CE0922CCEA7A0005FD85F /* WelcomeViewController.swift */; };
 		9C6CE0962CCEA7A0005FD85F /* Welcome.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C6CE0942CCEA7A0005FD85F /* Welcome.storyboard */; };
 		9C6CE0982CCEA7A1005FD85F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C6CE0972CCEA7A1005FD85F /* Assets.xcassets */; };
 		9C6CE09B2CCEA7A1005FD85F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C6CE0992CCEA7A1005FD85F /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7959335D2CDE5B5200E1DBF0 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		9C6CE08B2CCEA7A0005FD85F /* ConcerteApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ConcerteApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C6CE08E2CCEA7A0005FD85F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9C6CE0902CCEA7A0005FD85F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		9C6CE0922CCEA7A0005FD85F /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		9C6CE0952CCEA7A0005FD85F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Welcome.storyboard; sourceTree = "<group>"; };
 		9C6CE0972CCEA7A1005FD85F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9C6CE09A2CCEA7A1005FD85F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -27,8 +27,7 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		7950CB5B2CD7C571001A92D7 /* TabBar */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = TabBar; sourceTree = "<group>"; };
-		7950CB5F2CD7F027001A92D7 /* TextedCat */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = TextedCat; sourceTree = "<group>"; };
+		7950CB5F2CD7F027001A92D7 /* Cat */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Cat; sourceTree = "<group>"; };
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,7 +74,7 @@
 			isa = PBXGroup;
 			children = (
 				9C6CE0942CCEA7A0005FD85F /* Welcome.storyboard */,
-				9C6CE0922CCEA7A0005FD85F /* WelcomeViewController.swift */,
+				7959335D2CDE5B5200E1DBF0 /* WelcomeViewController.swift */,
 			);
 			path = Welcome;
 			sourceTree = "<group>";
@@ -83,8 +82,7 @@
 		9C6CE0A32CD0EF6A005FD85F /* Scene */ = {
 			isa = PBXGroup;
 			children = (
-				7950CB5F2CD7F027001A92D7 /* TextedCat */,
-				7950CB5B2CD7C571001A92D7 /* TabBar */,
+				7950CB5F2CD7F027001A92D7 /* Cat */,
 				9C6CE0A22CD0EF60005FD85F /* Welcome */,
 			);
 			path = Scene;
@@ -106,8 +104,7 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				7950CB5B2CD7C571001A92D7 /* TabBar */,
-				7950CB5F2CD7F027001A92D7 /* TextedCat */,
+				7950CB5F2CD7F027001A92D7 /* Cat */,
 			);
 			name = ConcerteApp;
 			productName = ConcerteApp;
@@ -165,7 +162,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9C6CE0932CCEA7A0005FD85F /* WelcomeViewController.swift in Sources */,
+				7959335E2CDE5B5200E1DBF0 /* WelcomeViewController.swift in Sources */,
 				9C6CE08F2CCEA7A0005FD85F /* AppDelegate.swift in Sources */,
 				9C6CE0912CCEA7A0005FD85F /* SceneDelegate.swift in Sources */,
 			);
